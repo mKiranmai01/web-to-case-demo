@@ -1,0 +1,67 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<div style="max-width:500px; margin: auto; Padding: 20px; border: 1px solid #0f0f0f; border-radius: 10px; font-family: Arial;">
+
+<h2 style="text-align:center; color:darkslategray">Raise a Support Case</h2>
+
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DgK00000EbSdj" method="POST">
+
+<input type=hidden name="orgid" value="00DgK00000EbSdj">
+<input type=hidden name="retURL" value="https://mkiranmai01.github.io/web-to-case-demo/thank-you.html">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="kiranmaimankena06@gmail.com">                                    -->
+<!--  ----------------------------------------------------------------------  -->
+<div style="display:flex;align-items:center;gap:10px;margin-top:10px;">
+<label for="email">Email</label>
+<input  id="email" name="email" type="email"  maxlength="80"
+        style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+    </div>
+
+<div style="display:flex;align-items:center;gap:10px;margin-top:10px;">
+
+<label for="phone">Phone</label>
+<input id="phone" name="phone" type="tel" maxlength="40"
+  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+  </div>
+
+<div style="display:flex;align-items:center;gap:10px;margin-top:10px;">
+<label for="subject">Subject</label>
+<input id="subject" name="subject" type="text" maxlength="80"
+  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+  </div>
+
+<div style="display:flex;align-items:flex-start;gap:10px;margin-top:10px;">
+<label for="description">Description</label>
+<textarea id="description" name="description" rows="5"
+  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;resize:vertical;"></textarea>
+<br>
+</div>
+
+<input type="hidden"  id="external" name="external" value="1" /><br>
+
+<div style="margin-top:20px;display:flex;justify-content:space-around;">
+
+  <button type="submit"
+  style="background:#4a90e2;color:white;padding:12px 20px;
+  border:none;border-radius:6px;cursor:pointer;font-size:14px;">
+
+    Submit Case
+
+  </button>
+
+</div>
+
+</form>
+
+</div>
