@@ -23,43 +23,38 @@
 <!--  value="kiranmaimankena06@gmail.com">                                    -->
 <!--  ----------------------------------------------------------------------  -->
 <div style="display:flex;align-items:center;gap:23px;margin-top:10px;">
-<label for="email">Email</label>
-<input  id="email" name="email" type="email"  maxlength="80"
-        style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
-    </div>
+        <label for="email">Email</label>
+        <input  id="email" name="email" type="email"  maxlength="80"
+                style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+</div>
 
+        
 <div style="display:flex;align-items:center;gap:17px;margin-top:10px;">
-
-<label for="phone">Phone</label>
-<input id="phone" name="phone" type="tel" maxlength="40"
-  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
-  </div>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" pattern="[6-9]{1}[0-9]{9}" maxlength="40"
+          style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+</div>
+        
 
 <div style="display:flex;align-items:center;gap:10px;margin-top:10px;">
-<label for="subject">Subject</label>
-<input id="subject" name="subject" type="text" maxlength="80"
-  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
-  </div>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" maxlength="80"
+          style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;"><br>
+</div>
 
 <div style="display:flex;align-items:flex-start;gap:10px;margin-top:10px;">
-<label for="description">Description</label>
-<textarea id="description" name="description" rows="5"
-  style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;resize:vertical;"></textarea>
-<br>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" rows="5"
+          style="flex:1;padding:10px;border:1px solid #ccc;border-radius:6px;resize:vertical;"></textarea>
+        <br>
 </div>
 
 <input type="hidden"  id="external" name="external" value="1" /><br>
 
 <div style="margin-top:20px;display:flex;justify-content:space-around;">
-
-  <button type="submit"
-  style="background:#4a90e2;color:white;padding:12px 20px;
-  border:none;border-radius:6px;cursor:pointer;font-size:14px;">
-
-    Submit Case
-
-  </button>
-
+        <button type="submit"
+          style="background:#4a90e2;color:white;padding:12px 20px;
+          border:none;border-radius:6px;cursor:pointer;font-size:14px;"> Submit Case</button>
 </div>
 
 </form>
